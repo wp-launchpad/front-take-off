@@ -28,8 +28,14 @@ class FrontEndInstallationManage
     }
 
     public function move_front_assets( FrontVersion $version ) {
-        foreach ($this->library_filesystem->listPaths('front' . DIRECTORY_SEPARATOR . $version->getValue()) as $path) {
+        foreach ($this->library_filesystem->listContents('front' . DIRECTORY_SEPARATOR . $version->getValue(), true) as $path) {
+            if($path['type'] === 'file') {
 
+            }
+
+            if($path[''] === '') {
+
+            }
         }
     }
 
