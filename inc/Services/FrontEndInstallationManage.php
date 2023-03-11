@@ -28,13 +28,19 @@ class FrontEndInstallationManage
     }
 
     public function move_front_assets( FrontVersion $version ) {
-        foreach ($this->library_filesystem->listContents('front' . DIRECTORY_SEPARATOR . $version->getValue(), true) as $path) {
+        $library_root = 'front' . DIRECTORY_SEPARATOR . $version->getValue();
+        $library_root_regex = preg_quote($library_root);
+        $project_root = '_dev';
+        foreach ($this->library_filesystem->listContents($library_root, true) as $path) {
+            $new_path = preg_replace("#^$library_root_regex#", $project_root, $path['path']);
             if($path['type'] === 'file') {
-
+                $content = $this->library_filesystem->read($path['path']);
+                $this->project_filesystem->write($new_path, $content);
+                continue;
             }
 
-            if($path[''] === '') {
-
+            if($path['type'] === 'dir') {
+                $this->project_filesystem->createDir($new_path);
             }
         }
     }
@@ -64,7 +70,9 @@ class FrontEndInstallationManage
             return $content;
         }
 
-
+        if(! preg_match('/()/', $content, $results)) {
+            return $content;
+        }
 
     }
 }

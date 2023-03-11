@@ -9,6 +9,7 @@ use RocketLauncherBuilder\Entities\Configurations;
 use RocketLauncherBuilder\ServiceProviders\ServiceProviderInterface;
 use RocketLauncherFrontTakeOff\Commands\InstallCommand;
 use RocketLauncherFrontTakeOff\Services\FrontEndInstallationManage;
+use RocketLauncherFrontTakeOff\Services\ProjectManager;
 
 class ServiceProvider implements ServiceProviderInterface
 {
@@ -56,8 +57,8 @@ class ServiceProvider implements ServiceProviderInterface
     {
 
         $frontend_installation_manager = new FrontEndInstallationManage($this->project_filesystem, $this->library_filesystem);
-
-        $app->add(new InstallCommand($frontend_installation_manager));
+        $project_manager = new ProjectManager($this->project_filesystem);
+        $app->add(new InstallCommand($frontend_installation_manager, $project_manager));
 
         return $app;
     }

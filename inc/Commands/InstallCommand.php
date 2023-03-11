@@ -7,6 +7,7 @@ use RocketLauncherBuilder\Commands\Command;
 use RocketLauncherBuilder\ObjectValues\InvalidValue;
 use RocketLauncherFrontTakeOff\ObjectValues\FrontVersion;
 use RocketLauncherFrontTakeOff\Services\FrontEndInstallationManage;
+use RocketLauncherFrontTakeOff\Services\ProjectManager;
 
 class InstallCommand extends Command
 {
@@ -17,15 +18,22 @@ class InstallCommand extends Command
     protected $front_end_installation_manage;
 
     /**
+     * @var ProjectManager
+     */
+    protected $project_manager;
+
+    /**
      * Instantiate the class.
      *
-     * @param FrontEndInstallationManage $filesystem Interacts with the filesystem.
+     * @param FrontEndInstallationManage $front_end_installation_manage
+     * @param ProjectManager $project_manager
      */
-    public function __construct(FrontEndInstallationManage $front_end_installation_manage)
+    public function __construct(FrontEndInstallationManage $front_end_installation_manage, ProjectManager $project_manager)
     {
         parent::__construct('front:install', 'Install a frontend');
 
         $this->front_end_installation_manage = $front_end_installation_manage;
+        $this->project_manager = $project_manager;
 
         $this
             ->argument('[type]', 'Type from the frontend to install')
@@ -63,5 +71,6 @@ class InstallCommand extends Command
 
         $this->front_end_installation_manage->create_template_folder();
         $this->front_end_installation_manage->move_front_assets($type);
+        $this->project_manager->clean();
     }
 }
