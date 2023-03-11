@@ -41,6 +41,7 @@
     "coenjacobs/mozart": "^0.7",
     "crochetfeve0251/rocket-launcher-builder": "^0.0.5",
     "crochetfeve0251/rocket-launcher-take-off": "^0.0.2",
+    "crochetfeve0251/rocket-launcher-front-take-off": "^0.0.1",
     "crochetfeve0251/rocket-launcher-core": "^0.0.1",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
     "league/container": "^3.3",

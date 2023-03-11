@@ -71,6 +71,6 @@ class InstallCommand extends Command
 
         $this->front_end_installation_manage->create_template_folder();
         $this->front_end_installation_manage->move_front_assets($type);
-        $this->project_manager->clean();
+        $this->project_manager->cleanup();
     }
 }

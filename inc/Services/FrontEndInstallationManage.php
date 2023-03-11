@@ -50,7 +50,7 @@ class FrontEndInstallationManage
 
         $params_path = 'configs/parameters.php';
 
-        if ( ! $this->project_filesystem->has($template_dir) ) {
+        if ( $this->project_filesystem->has($template_dir) ) {
             return;
         }
 
@@ -62,6 +62,7 @@ class FrontEndInstallationManage
 
         $content = $this->project_filesystem->read( $params_path );
 
+        $content = $this->add_template_param($content);
         $this->project_filesystem->update($params_path, $content);
     }
 
@@ -70,9 +71,21 @@ class FrontEndInstallationManage
             return $content;
         }
 
-        if(! preg_match('/()/', $content, $results)) {
+        if(! preg_match('/(?<array>return\s\[(?:[^[\]]+|(?R))*\]\s*;\s*$)/', $content, $results)) {
             return $content;
         }
 
+        $array = $results['array'];
+
+        if(! preg_match('/(?<indents>\h*)[\'"].*[\'"]\s=>/', $array, $results)) {
+            return $content;
+        }
+
+        $indents = $results['indents'];
+        $new_content = "$indents'template_path' => \$plugin_launcher_path . 'templates/',\n";
+        $new_content .= "$indents'assets_path' => \$plugin_launcher_path . 'assets/',\n";
+        $new_content .= "];\n";
+
+        return preg_replace('/]\s*;\s*$/', $new_content, $content);
     }
 }

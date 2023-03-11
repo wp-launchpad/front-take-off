@@ -6,6 +6,9 @@ return [
         'configs' => [
             'parameters.php' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
         ],
+        'bin' => [
+            'generator' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+        ],
         'composer.json' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
     ],
     'test_data' => [
@@ -16,6 +19,14 @@ return [
                     'configs/parameters.php' => [
                         'exists' => true,
                         'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
+                    ],
+                    'composer.json' => [
+                        'exists' => true,
+                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+                    ],
+                    'bin/generator' => [
+                        'exists' => true,
+                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => false,
@@ -45,6 +56,14 @@ return [
                     'configs/parameters.php' => [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/configs/parameters.php'),
+                    ],
+                    'composer.json' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/composer.json'),
+                    ],
+                    'bin/generator' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => true,
@@ -84,6 +103,14 @@ return [
                         'exists' => true,
                         'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
                     ],
+                    'composer.json' => [
+                        'exists' => true,
+                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+                    ],
+                    'bin/generator' => [
+                        'exists' => true,
+                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+                    ],
                     '_dev/package.json' => [
                         'exists' => false,
                     ],
@@ -112,6 +139,14 @@ return [
                     'configs/parameters.php' => [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/configs/parameters.php'),
+                    ],
+                    'composer.json' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/composer.json'),
+                    ],
+                    'bin/generator' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => true,
@@ -150,6 +185,14 @@ return [
                         'exists' => true,
                         'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
                     ],
+                    'composer.json' => [
+                        'exists' => true,
+                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+                    ],
+                    'bin/generator' => [
+                        'exists' => true,
+                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+                    ],
                     '_dev/package.json' => [
                         'exists' => false,
                     ],
@@ -178,6 +221,14 @@ return [
                     'configs/parameters.php' => [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/configs/parameters.php'),
+                    ],
+                    'composer.json' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/composer.json'),
+                    ],
+                    'bin/generator' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => true,
