@@ -1,15 +1,15 @@
 <?php
 
-namespace RocketLauncherFrontTakeOff;
+namespace LaunchpadFrontTakeOff;
 
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
-use RocketLauncherBuilder\App;
-use RocketLauncherBuilder\Entities\Configurations;
-use RocketLauncherBuilder\ServiceProviders\ServiceProviderInterface;
-use RocketLauncherFrontTakeOff\Commands\InstallCommand;
-use RocketLauncherFrontTakeOff\Services\FrontEndInstallationManage;
-use RocketLauncherFrontTakeOff\Services\ProjectManager;
+use LaunchpadCLI\App;
+use LaunchpadCLI\Entities\Configurations;
+use LaunchpadCLI\ServiceProviders\ServiceProviderInterface;
+use LaunchpadFrontTakeOff\Commands\InstallCommand;
+use LaunchpadFrontTakeOff\Services\FrontEndInstallationManage;
+use LaunchpadFrontTakeOff\Services\ProjectManager;
 
 class ServiceProvider implements ServiceProviderInterface
 {

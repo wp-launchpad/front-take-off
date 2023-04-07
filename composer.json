@@ -1,5 +1,5 @@
 {
-  "name": "crochetfeve0251/rocket-launcher-front-take-off",
+  "name": "wp-launchpad/front-take-off",
   "description": "Initialisation library for psr4 plugin",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "crochetfeve0251/rocket-launcher-builder": "^0.0.5",
+    "wp-launchpad/cli": "^1.0.1",
     "ext-mbstring": "*",
     "ext-json": "*",
     "composer/composer": "^2.5"
@@ -22,12 +22,12 @@
   },
   "autoload": {
     "psr-4": {
-      "RocketLauncherFrontTakeOff\\": "inc/"
+      "LaunchpadFrontTakeOff\\": "inc/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "RocketLauncherFrontTakeOff\\Tests\\": "tests/"
+      "LaunchpadFrontTakeOff\\Tests\\": "tests/"
     }
   }
 }

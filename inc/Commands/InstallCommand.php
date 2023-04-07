@@ -1,13 +1,13 @@
 <?php
 
-namespace RocketLauncherFrontTakeOff\Commands;
+namespace LaunchpadFrontTakeOff\Commands;
 
 use Ahc\Cli\IO\Interactor;
-use RocketLauncherBuilder\Commands\Command;
-use RocketLauncherBuilder\ObjectValues\InvalidValue;
-use RocketLauncherFrontTakeOff\ObjectValues\FrontVersion;
-use RocketLauncherFrontTakeOff\Services\FrontEndInstallationManage;
-use RocketLauncherFrontTakeOff\Services\ProjectManager;
+use LaunchpadCLI\Commands\Command;
+use LaunchpadCLI\ObjectValues\InvalidValue;
+use LaunchpadFrontTakeOff\ObjectValues\FrontVersion;
+use LaunchpadFrontTakeOff\Services\FrontEndInstallationManage;
+use LaunchpadFrontTakeOff\Services\ProjectManager;
 
 class InstallCommand extends Command
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace RocketLauncherFrontTakeOff\ObjectValues;
+namespace LaunchpadFrontTakeOff\ObjectValues;
 
-use RocketLauncherBuilder\ObjectValues\InvalidValue;
+use LaunchpadCLI\ObjectValues\InvalidValue;
 
 class FrontVersion
 {

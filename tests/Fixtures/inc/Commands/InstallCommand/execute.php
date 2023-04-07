@@ -4,12 +4,12 @@ return [
     'vfs_dir' => '/',
     'structure' => [
         'configs' => [
-            'parameters.php' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
+            'parameters.php' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
         ],
         'bin' => [
-            'generator' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+            'generator' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
         ],
-        'composer.json' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+        'composer.json' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
     ],
     'test_data' => [
         'installReactShouldConfigureProject' => [
@@ -18,15 +18,15 @@ return [
                 'files' => [
                     'configs/parameters.php' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
                     ],
                     'composer.json' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
                     ],
                     'bin/generator' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => false,
@@ -67,27 +67,27 @@ return [
                     ],
                     '_dev/package.json' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/react/package.json' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/react/package.json' ),
                     ],
                     '_dev/bud.config.js' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/react/bud.config.js' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/react/bud.config.js' ),
                     ],
                     '_dev/.npmrc' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/react/.npmrc' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/react/.npmrc' ),
                     ],
                     '_dev/.gitignore' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/react/.gitignore' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/react/.gitignore' ),
                     ],
                     '_dev/src/app.js' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/react/src/app.js' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/react/src/app.js' ),
                     ],
                     '_dev/src/App.jsx' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/react/src/App.jsx' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/react/src/App.jsx' ),
                     ],
                     '_dev/src/App.vue' => [
                         'exists' => false,
@@ -101,15 +101,15 @@ return [
                 'files' => [
                     'configs/parameters.php' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
                     ],
                     'composer.json' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
                     ],
                     'bin/generator' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => false,
@@ -150,23 +150,23 @@ return [
                     ],
                     '_dev/package.json' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vanilla/package.json' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vanilla/package.json' ),
                     ],
                     '_dev/bud.config.js' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vanilla/bud.config.js' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vanilla/bud.config.js' ),
                     ],
                     '_dev/.npmrc' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vanilla/.npmrc' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vanilla/.npmrc' ),
                     ],
                     '_dev/.gitignore' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vanilla/.gitignore' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vanilla/.gitignore' ),
                     ],
                     '_dev/src/app.js' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vanilla/src/app.js' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vanilla/src/app.js' ),
                     ],
                     '_dev/src/App.jsx' => [
                         'exists' => false,
@@ -183,15 +183,15 @@ return [
                 'files' => [
                     'configs/parameters.php' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
                     ],
                     'composer.json' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/composer.json'),
                     ],
                     'bin/generator' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
                     ],
                     '_dev/package.json' => [
                         'exists' => false,
@@ -232,27 +232,27 @@ return [
                     ],
                     '_dev/package.json' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vue/package.json' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vue/package.json' ),
                     ],
                     '_dev/bud.config.js' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vue/bud.config.js' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vue/bud.config.js' ),
                     ],
                     '_dev/.npmrc' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vue/.npmrc' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vue/.npmrc' ),
                     ],
                     '_dev/.gitignore' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vue/.gitignore' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vue/.gitignore' ),
                     ],
                     '_dev/src/app.js' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vue/src/app.js' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vue/src/app.js' ),
                     ],
                     '_dev/src/App.vue' => [
                         'exists' => true,
-                        'content' => file_get_contents(ROCKER_LAUNCHER_FRONT_TAKE_OFF_DIR . '/front/vue/src/App.vue' ),
+                        'content' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_DIR . '/front/vue/src/App.vue' ),
                     ],
                     '_dev/src/App.jsx' => [
                         'exists' => false,

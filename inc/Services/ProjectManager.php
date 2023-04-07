@@ -1,9 +1,9 @@
 <?php
 
-namespace RocketLauncherFrontTakeOff\Services;
+namespace LaunchpadFrontTakeOff\Services;
 
 use League\Flysystem\Filesystem;
-use RocketLauncherFrontTakeOff\ServiceProvider;
+use LaunchpadFrontTakeOff\ServiceProvider;
 
 class ProjectManager
 {

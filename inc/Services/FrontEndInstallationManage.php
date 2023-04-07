@@ -1,9 +1,9 @@
 <?php
 
-namespace RocketLauncherFrontTakeOff\Services;
+namespace LaunchpadFrontTakeOff\Services;
 
 use League\Flysystem\Filesystem;
-use RocketLauncherFrontTakeOff\ObjectValues\FrontVersion;
+use LaunchpadFrontTakeOff\ObjectValues\FrontVersion;
 
 class FrontEndInstallationManage
 {
