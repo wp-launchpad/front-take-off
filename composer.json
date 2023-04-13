@@ -1,6 +1,6 @@
 {
   "name": "wp-launchpad/front-take-off",
-  "description": "Initialisation library for psr4 plugin",
+  "description": "Front-end initialisation library for the Launchpad framework",
   "minimum-stability": "stable",
   "license": "proprietary",
   "type": "library",
@@ -28,6 +28,12 @@
   "autoload-dev": {
     "psr-4": {
       "LaunchpadFrontTakeOff\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "launchpad": {
+      "provider" : "LaunchpadFrontTakeOff\\ServiceProvider",
+      "command": "front:initialize"
     }
   }
 }
