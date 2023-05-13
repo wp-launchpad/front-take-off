@@ -33,7 +33,7 @@
   "extra": {
     "launchpad": {
       "provider" : "LaunchpadFrontTakeOff\\ServiceProvider",
-      "command": "front:initialize"
+      "command": "front:install"
     }
   }
 }
