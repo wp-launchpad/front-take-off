@@ -2,6 +2,7 @@
 
 namespace LaunchpadFrontTakeOff;
 
+use LaunchpadFrontTakeOff\Services\ConfigsManager;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
 use LaunchpadCLI\App;
@@ -57,8 +58,9 @@ class ServiceProvider implements ServiceProviderInterface
     {
 
         $frontend_installation_manager = new FrontEndInstallationManage($this->project_filesystem, $this->library_filesystem);
+        $config_manager = new ConfigsManager($this->project_filesystem, $this->configs);
         $project_manager = new ProjectManager($this->project_filesystem);
-        $app->add(new InstallCommand($frontend_installation_manager, $project_manager));
+        $app->add(new InstallCommand($frontend_installation_manager, $project_manager, $config_manager));
 
         return $app;
     }

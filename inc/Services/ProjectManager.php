@@ -33,8 +33,12 @@ class ProjectManager
 
         $json = json_decode($content, true);
 
-        if(key_exists('require-dev', $json) && key_exists('crochetfeve0251/rocket-launcher-front-take-off', $json['require-dev'])) {
-            unset($json['require-dev']['crochetfeve0251/rocket-launcher-front-take-off']);
+        if(key_exists('require-dev', $json) && key_exists('wp-launchpad/front-take-off', $json['require-dev'])) {
+            unset($json['require-dev']['wp-launchpad/front-take-off']);
+        }
+
+        if(key_exists('require', $json) && key_exists('wp-launchpad/front-take-off', $json['require'])) {
+            unset($json['require']['wp-launchpad/front-take-off']);
         }
 
         $content = json_encode($json, JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES) . "\n";

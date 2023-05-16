@@ -5,6 +5,7 @@ return [
     'structure' => [
         'configs' => [
             'parameters.php' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/parameters.php'),
+            'providers.php' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/configs/providers.php'),
         ],
         'bin' => [
             'generator' => file_get_contents(LAUNCHPAD_FRONT_TAKE_OFF_TESTS_FIXTURES_DIR . '/files/bin/generator'),
@@ -56,6 +57,10 @@ return [
                     'configs/parameters.php' => [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/configs/parameters.php'),
+                    ],
+                    'configs/providers.php' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/configs/providers.php'),
                     ],
                     'composer.json' => [
                         'exists' => true,
@@ -140,6 +145,10 @@ return [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/configs/parameters.php'),
                     ],
+                    'configs/providers.php' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/configs/providers.php'),
+                    ],
                     'composer.json' => [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/composer.json'),
@@ -221,6 +230,10 @@ return [
                     'configs/parameters.php' => [
                         'exists' => true,
                         'content' => file_get_contents(__DIR__ . '/files/configs/parameters.php'),
+                    ],
+                    'configs/providers.php' => [
+                        'exists' => true,
+                        'content' => file_get_contents(__DIR__ . '/files/configs/providers.php'),
                     ],
                     'composer.json' => [
                         'exists' => true,
