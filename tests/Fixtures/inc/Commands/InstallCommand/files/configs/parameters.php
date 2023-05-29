@@ -14,5 +14,5 @@ return [
     'plugin_inc_path' => realpath( $plugin_launcher_path . 'inc/' ) . '/',
     'prefix' => 'rocket_launcher',
     'template_path' => $plugin_launcher_path . 'templates/',
-    'assets_path' => $plugin_launcher_path . 'assets/',
+    'assets_url' => plugins_url('assets/', $plugin_launcher_path . '/' . basename( $plugin_launcher_path ) . '.php'),
 ];

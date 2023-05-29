@@ -67,7 +67,7 @@ class FrontEndInstallationManage
     }
 
     protected function add_template_param(string $content) {
-        if(preg_match('/[\'"]template_path[\'"]\s=>/', $content)) {
+        if(preg_match('/[\'"]assets_url[\'"]\s=>/', $content)) {
             return $content;
         }
 
@@ -83,7 +83,7 @@ class FrontEndInstallationManage
 
         $indents = $results['indents'];
         $new_content = "$indents'template_path' => \$plugin_launcher_path . 'templates/',\n";
-        $new_content .= "$indents'assets_path' => \$plugin_launcher_path . 'assets/',\n";
+        $new_content .= "$indents'assets_url' => plugins_url('assets/', \$plugin_launcher_path . '/' . basename( \$plugin_launcher_path ) . '.php'),\n";
         $new_content .= "];\n";
 
         return preg_replace('/]\s*;\s*$/', $new_content, $content);
