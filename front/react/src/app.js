@@ -1,14 +1,11 @@
 import App from "./App";
 import React from 'react';
-import ReactDOM from "react-dom";
+import {createRoot} from 'react-dom/client';
 
 jQuery(function () {
     const root = document.getElementById('app');
 
     if(root){
-        ReactDOM.render(
-            <App />,
-            root
-        );
+        createRoot(root).render(<App />);
     }
 });

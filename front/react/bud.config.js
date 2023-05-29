@@ -13,4 +13,5 @@ module.exports = async bud => {
         .entry({
             app: 'app.js',
         })
+        .when( bud.isProduction, () => bud.splitChunks().minimize() )
 }
