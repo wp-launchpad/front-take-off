@@ -36,7 +36,7 @@
       "provider" : "LaunchpadFrontTakeOff\\ServiceProvider",
       "command": "front:install",
       "libraries": {
-        "wp-launchpad/front": "^0.0"
+        "wp-launchpad/front": "^0.1"
       }
     }
   }
