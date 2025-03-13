@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "-": "0.0.1",
-    "@roots/bud": "^6.11.0",
-    "@roots/bud-vue": "^6.11.0",
-    "caniuse-lite": "^1.0.30001464"
+    "@roots/bud": "^6.24",
+    "@roots/bud-vue": "^6.24.0",
+    "caniuse-lite": "^1.0.30001704"
   }
 }
